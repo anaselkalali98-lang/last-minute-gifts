@@ -42,7 +42,7 @@ header .btn{padding:11px 19px;font-size:15px}
 .hero p{max-width:34em;margin-bottom:25px;font-size:19px;color:#514257}
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
 .hero .meta{margin-top:17px;margin-bottom:0;font-size:15px;color:var(--muted)}
-.hero svg{width:100%;max-width:480px;justify-self:center;filter:drop-shadow(0 16px 25px rgba(42,21,55,.1))}
+.hero-image{display:block;width:100%;max-width:480px;aspect-ratio:1;object-fit:cover;justify-self:center;border-radius:28px;box-shadow:0 18px 44px rgba(42,21,55,.16)}
 .text-link{font-weight:700;text-underline-offset:4px;text-decoration-thickness:1px}
 .text-link:hover{color:var(--wine)}
 @media(min-width:800px){.hero{padding:76px 0 70px}.hero .wrap{grid-template-columns:1.15fr .85fr}}
@@ -163,19 +163,7 @@ footer a{color:#fff;text-underline-offset:3px}
 </div>
 <p class="meta">Casablanca uniquement · Paiement à la livraison</p>
 </div>
-<svg viewBox="0 0 400 360" role="img" aria-label="Illustration d'un coffret cadeau avec bouquet et ballons">
-<circle cx="200" cy="190" r="165" fill="#fbd9e0"/>
-<path d="M130 120C130 60 120 40 118 30" stroke="#d81e4a" stroke-width="2" fill="none"/><ellipse cx="116" cy="22" rx="30" ry="38" fill="#f2b544"/>
-<path d="M290 130C290 80 300 50 304 40" stroke="#d81e4a" stroke-width="2" fill="none"/><ellipse cx="306" cy="30" rx="28" ry="36" fill="#d81e4a"/>
-<g stroke="#2a1537" stroke-width="4" fill="none"><path d="M165 150v-55M200 150v-75M235 150v-55" stroke="#3f8f5f"/></g>
-<g fill="#d81e4a"><use href="#fl" transform="translate(165 90) scale(1.5)"/><use href="#fl" transform="translate(200 68) scale(1.7)" fill="#f2b544"/><use href="#fl" transform="translate(235 90) scale(1.5)"/></g>
-<g fill="#f2b544"><use href="#fl" transform="translate(200 68) scale(1.7)" style="display:none"/></g>
-<rect x="100" y="150" width="200" height="150" rx="10" fill="#2a1537"/>
-<rect x="90" y="132" width="220" height="40" rx="8" fill="#d81e4a"/>
-<rect x="188" y="132" width="24" height="168" fill="#f2b544"/>
-<path d="M200 132C170 90 140 120 200 132ZM200 132C230 90 260 120 200 132Z" fill="#f2b544"/>
-<g fill="#fff"><use href="#hrt" transform="translate(140 235)"/><use href="#hrt" transform="translate(260 235)"/></g>
-</svg>
+<img class="hero-image" src="photos/hero-gift-basket.webp" alt="Panier cadeau romantique avec des roses rouges, un ours en peluche et des chocolats" fetchpriority="high">
 </div></section>
 
 <div class="benefit-strip" aria-label="Les avantages du service">
