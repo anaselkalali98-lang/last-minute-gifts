@@ -65,6 +65,16 @@ h2{font-size:clamp(34px,5vw,50px);margin-bottom:14px}
 .surprise-card li{padding-left:3px}
 .surprise-note{margin-top:20px;padding:16px 18px;background:#fff4d7;border-radius:14px;color:#493b24;font-size:15px}
 .surprise-action{margin-top:20px}
+.inspiration-section{background:#fff}
+.inspiration-intro{max-width:760px;margin:0 0 30px;color:#514257;font-size:18px}
+.inspiration-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.inspiration-card{overflow:hidden;background:var(--bg);border-radius:20px}
+.inspiration-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--rose)}
+.inspiration-card-copy{padding:18px}
+.inspiration-card h3{margin-bottom:8px;font-size:22px}
+.inspiration-card p{margin-bottom:14px;color:#514257;font-size:15px}
+.inspiration-card .btn{width:100%;padding:12px 16px;font-size:15px}
+.inspiration-note{margin-top:22px;color:var(--muted);font-size:14px}
 .packs{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
 .pack{position:relative;background:var(--card);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(42,21,55,.08)}
 .pack-featured{border:3px solid var(--gold);box-shadow:0 14px 36px rgba(42,21,55,.15)}
@@ -125,7 +135,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 footer .footer-brand{color:#fff;font-family:"Young Serif",serif;font-size:19px}
 footer a{color:#fff;text-underline-offset:3px}
 .wa{position:fixed;right:16px;bottom:16px;z-index:5;box-shadow:0 6px 18px rgba(42,21,55,.3)}
-@media(min-width:800px){.benefit-strip .wrap{grid-template-columns:repeat(4,minmax(0,1fr))}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.surprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.order .wrap{grid-template-columns:1fr 1fr}}
+@media(min-width:800px){.benefit-strip .wrap{grid-template-columns:repeat(4,minmax(0,1fr))}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.surprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inspiration-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.order .wrap{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){section{padding:58px 0}.wrap{padding:0 18px}.main-nav{display:none}.hero{padding:48px 0}.hero .wrap{gap:24px}.hero h1{font-size:clamp(42px,12vw,58px)}.hero p{font-size:17px}.benefit-strip .wrap{gap:14px}.benefit{align-items:flex-start;font-size:13px}.benefit-icon{width:32px;height:32px;font-size:16px}.packs{grid-template-columns:1fr;gap:20px}.pack img{aspect-ratio:5/3}.pack div{padding:22px}.pack h3{font-size:27px}.pack p{font-size:17px}.pack b{font-size:26px}.order-card{padding:22px}.wa{right:12px;bottom:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
@@ -144,6 +154,7 @@ footer a{color:#fff;text-underline-offset:3px}
 <a class="logo" href="#top">Last-Minute Gifts</a>
 <nav class="main-nav" aria-label="Navigation principale">
 <a href="#offres">Nos coffrets</a>
+<a href="#inspirations">Idées cadeaux</a>
 <a href="#livraison">Livraison</a>
 <a href="#faq">Questions</a>
 </nav>
@@ -296,6 +307,31 @@ footer a{color:#fff;text-underline-offset:3px}
 <p class="surprise-note"><strong>Allergies ou préférences ?</strong> Dites-le-nous sur WhatsApp avant la préparation. Pour les enfants, les bonbons sont ajoutés uniquement sur demande ; merci de nous signaler toute allergie alimentaire.</p>
 <div class="surprise-action"><a class="btn alt" href="#commander" data-msg="Bonjour, je voudrais personnaliser la boîte surprise. Voici l’âge, les goûts et les éventuelles allergies du destinataire :">Personnaliser la surprise</a></div>
 </div>
+</div></section>
+
+<section class="inspiration-section" id="inspirations" aria-labelledby="inspiration-title"><div class="wrap">
+<p class="section-kicker">Pour trouver l’inspiration</p>
+<h2 id="inspiration-title">Quelques idées de cadeaux</h2>
+<p class="inspiration-intro">Vous avez repéré un style qui lui plairait ? Inspirez-vous de ces bouquets et compositions gourmandes, puis écrivez-nous pour imaginer une version selon votre budget et les produits disponibles.</p>
+<div class="inspiration-grid">
+<article class="inspiration-card">
+<img src="photos/inspiration-bouquet-chocolat.jpg" alt="Bouquet gourmand composé de chocolats emballés dans du papier rose" loading="lazy">
+<div class="inspiration-card-copy"><h3>Bouquet gourmand</h3><p>Une composition festive de chocolats à offrir comme un bouquet.</p><a class="btn alt" href="#" data-msg="Bonjour, j’aime l’idée du bouquet gourmand en chocolats. Pouvez-vous me proposer une composition et son prix ?">Demander ce style</a></div>
+</article>
+<article class="inspiration-card">
+<img src="photos/inspiration-roses-chocolats.jpg" alt="Bouquet de roses roses et blanches avec des chocolats" loading="lazy">
+<div class="inspiration-card-copy"><h3>Roses et chocolats</h3><p>Des roses délicates accompagnées d’une sélection de chocolats.</p><a class="btn alt" href="#" data-msg="Bonjour, j’aime le bouquet de roses et chocolats. Pouvez-vous me proposer une composition et son prix ?">Demander ce style</a></div>
+</article>
+<article class="inspiration-card">
+<img src="photos/inspiration-bouquet-gourmand.jpg" alt="Grand bouquet cadeau composé de chocolats et de friandises" loading="lazy">
+<div class="inspiration-card-copy"><h3>Grand bouquet gourmand</h3><p>Une grande composition sucrée pour marquer une occasion spéciale.</p><a class="btn alt" href="#" data-msg="Bonjour, j’aime l’idée du grand bouquet gourmand. Pouvez-vous me proposer une composition et son prix ?">Demander ce style</a></div>
+</article>
+<article class="inspiration-card">
+<img src="photos/inspiration-roses-pastel.jpg" alt="Bouquet romantique de roses roses et ivoire" loading="lazy">
+<div class="inspiration-card-copy"><h3>Bouquet de roses pastel</h3><p>Des tons doux pour une attention romantique et élégante.</p><a class="btn alt" href="#" data-msg="Bonjour, j’aime le bouquet de roses pastel. Pouvez-vous me proposer une composition et son prix ?">Demander ce style</a></div>
+</article>
+</div>
+<p class="inspiration-note">Photos d’inspiration : les fleurs, les chocolats, les marques, l’emballage et la composition peuvent varier selon les disponibilités. Nous confirmons le contenu et le prix avec vous avant la préparation.</p>
 </div></section>
 
 <section class="express" id="livraison"><div class="wrap">
