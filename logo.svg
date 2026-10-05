@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title description">
+  <title id="title">Cadeaux de dernière minute</title>
+  <desc id="description">Logo avec un coffret cadeau fleuri aux couleurs prune, rose et or.</desc>
+  <g transform="translate(8 8)">
+    <circle cx="52" cy="52" r="52" fill="#2a1537"/>
+    <rect x="20" y="49" width="64" height="43" rx="7" fill="#d81e4a"/>
+    <rect x="16" y="42" width="72" height="14" rx="6" fill="#f2b544"/>
+    <rect x="47" y="42" width="10" height="50" fill="#f2b544"/>
+    <path d="M52 42C31 26 32 15 43 18c6 2 9 13 9 24Zm0 0c21-16 20-27 9-24-6 2-9 13-9 24Z" fill="#f2b544"/>
+    <circle cx="33" cy="68" r="3" fill="#fff"/>
+    <circle cx="71" cy="68" r="3" fill="#fff"/>
+  </g>
+  <text x="132" y="55" fill="#2a1537" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700">Cadeaux de</text>
+  <text x="132" y="91" fill="#d81e4a" font-family="Georgia, 'Times New Roman', serif" font-size="32" font-weight="700">dernière minute</text>
+  <text x="430" y="112" fill="#705d78" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2">CASABLANCA</text>
+</svg>

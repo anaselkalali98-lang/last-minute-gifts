@@ -23,6 +23,8 @@ A one-page French landing page for a same-day gift delivery service in Casablanc
 
 ```
 index.html            the whole page
+logo.svg              French wordmark and gift-box logo
+favicon.svg           compact gift-box browser icon
 cadeau-secret.png     photo for the secret gift section
 photos/               pack photos (petit-geste, anniversaire, romantique,
                       sur-mesure, box-surprise-totale .jpg)
