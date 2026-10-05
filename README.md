@@ -1,4 +1,4 @@
-# Last-Minute Gifts
+# Cadeaux de dernière minute
 
 A one-page French landing page for a same-day gift delivery service in Casablanca, Morocco. Customers browse gift packs, tap a button, and start an order on WhatsApp. Gifts are prepared by hand and delivered in 2 to 3 hours.
 
