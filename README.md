@@ -1,48 +1,43 @@
 # Cadeaux de dernière minute
 
-A one-page French landing page for a same-day gift delivery service in Casablanca, Morocco. Customers browse gift packs, tap a button, and start an order on WhatsApp. Gifts are prepared by hand and delivered in 2 to 3 hours.
+One-page French storefront for flower-and-chocolate gift packs delivered in Casablanca, Morocco. Customers choose a pictured pack and contact the seller on WhatsApp to confirm availability and delivery.
 
-*Page d'accueil en français pour un service de cadeaux livrés en 2 à 3 heures à Casablanca. Les commandes se font par WhatsApp.*
+*Boutique en français de coffrets cadeaux de fleurs et de chocolats, livrés à Casablanca. Les commandes se font par WhatsApp.*
 
 ## Features
 
-- Five gift packs with prices in MAD: Petit geste, Anniversaire, Romantique, Surprise sur mesure, and Box Surprise Totale.
-- Every pack includes a small surprise box.
-- "Cadeau secret" option: a handmade framed card with a personal message.
-- 2 to 3 hour delivery section (Casablanca only, payment on delivery).
-- Every button opens WhatsApp with a ready-made message, so the seller can ask about the receiver's age, gender, occasion and budget.
-- Floating WhatsApp button, mobile-first layout, light and fast.
+- Six pictured gift packs priced from 149 to 500 dh.
+- WhatsApp order links prefilled with the selected pack and price.
+- Delivery information, ordering steps, and frequently asked questions.
+- Mobile-friendly layout and floating WhatsApp button.
 
 ## Tech
 
-- Plain HTML, CSS and a few lines of JavaScript in a single `index.html`. No framework and no build step.
-- Inline SVG illustrations as a fallback when a photo is missing.
+- Plain HTML, CSS, and JavaScript in `index.html`; no framework or build step.
 - Google Fonts: Young Serif and Figtree.
 
 ## Project structure
 
 ```
-index.html            the whole page
-logo.svg              French wordmark and gift-box logo
-favicon.svg           compact gift-box browser icon
-cadeau-secret.png     photo for the secret gift section
-photos/               pack photos (petit-geste, anniversaire, romantique,
-                      sur-mesure, box-surprise-totale .jpg)
+index.html                    the whole page
+logo.svg                      French wordmark and gift-box logo
+favicon.svg                   compact gift-box browser icon
+photos/                       six current gift-pack product photos
 ```
 
 ## Customize
 
 - **WhatsApp number:** change `NUM` in the script at the bottom of `index.html` (international format, no `+`).
-- **Prices and texts:** edit them directly in `index.html`.
+- **Prices and texts:** edit the product cards directly in `index.html`.
 - **Photos:** replace the files in `photos/` and keep the same names.
 
 ## Deploy
 
 This is a static site. On Netlify choose *Add new site → Import an existing project → GitHub*, leave the build command empty and the publish directory blank. Every commit redeploys the site.
 
-## Note on images
+## Note on product photos
 
-The pack photos are AI-generated illustrations. The page states that the exact content may vary depending on the flowers and products of the day.
+The photos illustrate the gift-pack styles. Flowers, chocolate brands, exact contents, availability, and delivery fees should be confirmed with the customer before the order is finalized.
 
 ## Author
 
