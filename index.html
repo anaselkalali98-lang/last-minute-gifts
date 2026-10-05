@@ -29,29 +29,9 @@ section{padding:80px 0}
 header{position:sticky;top:0;z-index:4;padding:12px 0;background:rgba(247,242,251,.96);border-bottom:1px solid rgba(42,21,55,.08);backdrop-filter:blur(12px)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px}
 .logo{font-family:"Young Serif",serif;font-size:22px;text-decoration:none;white-space:nowrap}
-.main-nav{display:flex;align-items:center;gap:26px}
-.main-nav a{text-decoration:none;font-size:15px;font-weight:600}
-.main-nav a:hover{color:var(--wine)}
 header .btn{padding:11px 19px;font-size:15px}
-.hero{position:relative;overflow:hidden;padding:64px 0 52px;background:linear-gradient(135deg,#fff9f4 0%,var(--bg) 62%,#f4e5ec 100%)}
-.hero .wrap{display:grid;gap:38px;align-items:center}
-.hero-copy{position:relative;z-index:1}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;margin-bottom:18px;color:var(--wine);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.eyebrow::before{content:"";width:22px;height:2px;background:var(--wine)}
-.hero h1{max-width:13ch;font-size:clamp(44px,7vw,76px);margin-bottom:20px;letter-spacing:-.025em}
-.hero p{max-width:34em;margin-bottom:25px;font-size:19px;color:#514257}
-.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
-.hero .meta{margin-top:17px;margin-bottom:0;font-size:15px;color:var(--muted)}
-.hero-image{display:block;width:100%;max-width:480px;aspect-ratio:1;object-fit:cover;justify-self:center;border-radius:28px;box-shadow:0 18px 44px rgba(42,21,55,.16)}
-.text-link{font-weight:700;text-underline-offset:4px;text-decoration-thickness:1px}
-.text-link:hover{color:var(--wine)}
-@media(min-width:800px){.hero{padding:76px 0 70px}.hero .wrap{grid-template-columns:1.15fr .85fr}}
 h2{font-size:clamp(34px,5vw,50px);margin-bottom:14px}
 .lead{max-width:44em;margin-bottom:40px;font-size:19px}
-.benefit-strip{padding:22px 0;background:var(--ink);color:#fff}
-.benefit-strip .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px}
-.benefit{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:600}
-.benefit-icon{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:50%;background:rgba(242,181,68,.16);color:var(--gold);font-size:19px}
 .section-kicker{margin-bottom:10px;color:var(--wine);font-size:14px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
 .price-note{margin-top:-24px;margin-bottom:30px;color:var(--muted);font-size:14px}
 .catalog-footer{margin-top:34px;padding:24px;background:rgba(255,255,255,.62);border-radius:18px}
@@ -76,9 +56,18 @@ h2{font-size:clamp(34px,5vw,50px);margin-bottom:14px}
 .inspiration-card .btn{width:100%;padding:12px 16px;font-size:15px}
 .inspiration-note{margin-top:22px;color:var(--muted);font-size:14px}
 .packs{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.featured-offer{display:grid;overflow:hidden;margin:0 0 64px;background:#fff;border:3px solid var(--gold);border-radius:24px;box-shadow:0 14px 36px rgba(42,21,55,.12)}
+.featured-offer-visual{min-height:260px;background:var(--rose)}
+.featured-offer-visual img,.featured-offer-visual svg{display:block;width:100%;height:100%;min-height:260px;object-fit:cover}
+.featured-offer-copy{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:28px}
+.featured-offer-kicker{color:var(--wine);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.featured-offer h1{font-size:clamp(36px,5vw,54px)}
+.featured-offer-copy>p:not(.featured-offer-kicker){max-width:38em;color:#514257;font-size:18px}
+.featured-offer-price{font-family:"Young Serif",Georgia,serif;font-size:34px;font-weight:400}
+.featured-offer-note{color:var(--muted);font-size:14px}
+.other-offers{margin-top:56px}
+.other-offers .lead{margin-bottom:30px}
 .pack{position:relative;background:var(--card);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(42,21,55,.08)}
-.pack-featured{border:3px solid var(--gold);box-shadow:0 14px 36px rgba(42,21,55,.15)}
-.offer-badge{position:absolute;top:16px;left:16px;z-index:1;background:var(--gold);color:var(--ink);padding:9px 16px;border-radius:999px;font-size:14px;font-weight:700}
 .pack svg{display:block;width:100%;height:auto}
 .items{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin-top:20px}
 .items li{background:#fff;border-radius:999px;padding:11px 19px;font-weight:600;font-size:17px}
@@ -135,8 +124,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
 footer .footer-brand{color:#fff;font-family:"Young Serif",serif;font-size:19px}
 footer a{color:#fff;text-underline-offset:3px}
 .wa{position:fixed;right:16px;bottom:16px;z-index:5;box-shadow:0 6px 18px rgba(42,21,55,.3)}
-@media(min-width:800px){.benefit-strip .wrap{grid-template-columns:repeat(4,minmax(0,1fr))}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.surprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inspiration-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.order .wrap{grid-template-columns:1fr 1fr}}
-@media(max-width:620px){section{padding:58px 0}.wrap{padding:0 18px}.main-nav{display:none}.hero{padding:48px 0}.hero .wrap{gap:24px}.hero h1{font-size:clamp(42px,12vw,58px)}.hero p{font-size:17px}.benefit-strip .wrap{gap:14px}.benefit{align-items:flex-start;font-size:13px}.benefit-icon{width:32px;height:32px;font-size:16px}.packs{grid-template-columns:1fr;gap:20px}.pack img{aspect-ratio:5/3}.pack div{padding:22px}.pack h3{font-size:27px}.pack p{font-size:17px}.pack b{font-size:26px}.order-card{padding:22px}.wa{right:12px;bottom:12px}}
+@media(min-width:800px){.featured-offer{grid-template-columns:1fr 1fr;min-height:410px}.featured-offer-visual img,.featured-offer-visual svg{min-height:410px}.featured-offer-copy{justify-content:center;padding:42px}.process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.surprise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inspiration-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.order .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){section{padding:38px 0}.wrap{padding:0 18px}.packs{grid-template-columns:1fr;gap:20px}.featured-offer{margin-bottom:48px}.featured-offer-copy{order:1;padding:22px}.featured-offer-visual{order:2}.featured-offer-visual img,.featured-offer-visual svg{height:auto;min-height:0;aspect-ratio:4/3}.featured-offer h1{font-size:38px}.featured-offer-copy>p:not(.featured-offer-kicker){font-size:17px}.pack img{aspect-ratio:5/3}.pack div{padding:22px}.pack h3{font-size:27px}.pack p{font-size:17px}.pack b{font-size:26px}.order-card{padding:22px}.wa{right:12px;bottom:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
@@ -152,57 +141,35 @@ footer a{color:#fff;text-underline-offset:3px}
 
 <header><div class="wrap">
 <a class="logo" href="#top">Cadeaux de dernière minute</a>
-<nav class="main-nav" aria-label="Navigation principale">
-<a href="#offres">Nos coffrets</a>
-<a href="#inspirations">Idées cadeaux</a>
-<a href="#livraison">Livraison</a>
-<a href="#faq">Questions</a>
-</nav>
 <a class="btn" href="#commander" data-msg="Bonjour, je voudrais commander un cadeau.">Commander</a>
 </div></header>
 
 <main id="top">
 
-<section class="hero"><div class="wrap">
-<div class="hero-copy">
-<p class="eyebrow">Une belle attention, sans attendre</p>
-<h1>Le cadeau parfait, livré en 2 à 3 heures à Casablanca.</h1>
-<p>Bouquets, chocolats, jouets, parfums et boîte surprise : choisissez un coffret dès 149 dh, écrivez-nous sur WhatsApp et nous le livrons chez la personne que vous aimez. Paiement à la livraison.</p>
-<div class="hero-actions">
-<a class="btn" href="#commander">Je commande mon cadeau <span aria-hidden="true">↗</span></a>
-<a class="text-link" href="#offres">Voir les coffrets <span aria-hidden="true">↓</span></a>
-</div>
-<p class="meta">Casablanca uniquement · Paiement à la livraison</p>
-</div>
-<img class="hero-image" src="photos/hero-gift-basket.webp" alt="Panier cadeau romantique avec des roses rouges, un ours en peluche et des chocolats" fetchpriority="high">
-</div></section>
-
-<div class="benefit-strip" aria-label="Les avantages du service">
-<div class="wrap">
-<div class="benefit"><span class="benefit-icon" aria-hidden="true">♡</span><span>Préparé avec soin</span></div>
-<div class="benefit"><span class="benefit-icon" aria-hidden="true">⌁</span><span>Livraison en 2 à 3 h après confirmation</span></div>
-<div class="benefit"><span class="benefit-icon" aria-hidden="true">⌖</span><span>À Casablanca</span></div>
-<div class="benefit"><span class="benefit-icon" aria-hidden="true">✓</span><span>Paiement à la livraison</span></div>
-</div>
-</div>
-
 <section id="offres" aria-labelledby="offers-title"><div class="wrap">
-<p class="section-kicker">Choisissez votre attention</p>
-<h2 id="offers-title">Un coffret pour chaque occasion</h2>
-<p class="lead">Découvrez nos cinq coffrets, du petit geste attentionné à la surprise la plus complète. Chaque coffret contient une petite boîte surprise. Le prix affiché comprend les fleurs, les chocolats, l'emballage et la carte.</p>
-<p class="price-note">Prix des coffrets en dirhams (dh). Le contenu peut varier selon les produits disponibles du jour.</p>
-<div class="packs">
-
-<article class="pack pack-featured">
-<span class="offer-badge">Une attention tout en douceur</span>
-<img src="photos/petit-geste.jpg" alt="Le coffret Petit geste avec un petit bouquet et des chocolats" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+<article class="featured-offer" aria-labelledby="featured-offer-title">
+<div class="featured-offer-visual">
+<img src="photos/petit-geste.jpg" alt="Le coffret Petit geste avec un petit bouquet et des chocolats" fetchpriority="high" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
 <svg viewBox="0 0 200 150" role="img" aria-label="Petit bouquet et tablette de chocolat"><rect width="200" height="150" fill="#d9e4fb"/>
 <path d="M85 100V60M100 100V45M115 100V60" stroke="#3f8f5f" stroke-width="3"/>
 <g fill="#d81e4a"><use href="#fl" transform="translate(85 55)"/><use href="#fl" transform="translate(115 55)"/></g><g fill="#fff"><use href="#fl" transform="translate(100 40)"/></g>
 <path d="M70 100h60l-8 40H78Z" fill="#f2b544"/>
 <rect x="136" y="90" width="38" height="52" rx="4" fill="#5b3a29" transform="rotate(8 155 116)"/><path d="M142 98h26M142 110h26M142 122h26" stroke="#8a5d44" stroke-width="2" transform="rotate(8 155 116)"/><use href="#sb" transform="translate(18 106)"/></svg>
-<div><h3>Petit geste</h3><p>Petit bouquet, chocolats, une petite boîte surprise et une carte avec votre message.</p><b>149 dh</b><a class="btn" href="#commander" data-msg="Bonjour, je suis intéressé par le coffret Petit geste à 149 dh.">Je choisis</a></div>
+</div>
+<div class="featured-offer-copy">
+<p class="featured-offer-kicker">Notre offre à découvrir en premier</p>
+<h1 id="featured-offer-title">Petit geste, grande attention.</h1>
+<p>Un petit bouquet, des chocolats, une boîte surprise et une carte avec votre message. Préparé avec soin et livré à Casablanca.</p>
+<p class="featured-offer-price">149 dh</p>
+<a class="btn" href="#" data-msg="Bonjour, je voudrais commander le coffret Petit geste à 149 dh.">Je commande Petit geste <span aria-hidden="true">↗</span></a>
+<p class="featured-offer-note">Paiement à la livraison · Délai estimé : 2 à 3 heures après confirmation.</p>
+</div>
 </article>
+<div class="other-offers">
+<p class="section-kicker">Pour d’autres occasions</p>
+<h2 id="offers-title">Découvrez aussi nos coffrets</h2>
+<p class="lead">Chaque coffret contient une petite boîte surprise. Prix en dirhams (dh). Le contenu peut varier selon les produits disponibles du jour.</p>
+<div class="packs">
 
 <article class="pack">
 <img src="photos/anniversaire.jpg" alt="Le coffret Anniversaire avec un bouquet, des chocolats et des ballons" loading="lazy" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
@@ -250,6 +217,7 @@ footer a{color:#fff;text-underline-offset:3px}
 <div><h3>Box Surprise Totale</h3><p>Le coffret le plus complet : bouquet, chocolats premium, jouet, parfum, bougie, carte et cadeau secret inclus.</p><b>250 dh</b><a class="btn" href="#commander" data-msg="Bonjour, je suis intéressé par la Box Surprise Totale à 250 dh.">Je choisis</a></div>
 </article>
 
+</div>
 </div>
 <div class="catalog-footer">
 <h3>Dans nos coffrets</h3>
